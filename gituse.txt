@@ -11,3 +11,26 @@ git  使用方式
 10、git log --pretty=oneline		一行输出上面的指令输出
 11、git reset --hard <版本号>		返回之前的版本 也可以回退到后来的版本
 12、git reflog						查看命令历史
+13、cat <file>						查看文件内容
+14、git checkout -- <file>			撤销上次更改
+15、git reset HEAD <file>			add过后撤销更改前应该这么做
+16、git rm <file> + git commit...	删除文件
+17、git checkout -- <file>			删错了  撤销上次更改
+18、要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
+	关联后，使用命令git push -u origin master第一次推送master分支的所有内容；
+	此后，每次本地提交后，只要有必要，就可以使用命令git push origin master推送最新修改；
+19、git checkout -b ...				创建并切换分支
+20、git branch						查看分支
+21、git checkout ...				切换分支
+22、git merge 分支					合并分支			
+23、git branch -d <name>			删除分支
+24、git log --graph					查看分支合并图
+25、git log --graph --pretty=oneline --abbrev-commit上述单行
+26、git merge --no-ff -m "merge with no-ff" ...	合并分支禁用fast forward
+27、git stash						储存当前操作
+28、git stash list					获取储存列表
+29、恢复储存操作					一是用git stash apply恢复，但是恢复后，stash内容并不删除，
+									你需要用git stash drop来删除；
+									另一种方式是用git stash pop，恢复的同时把stash内容也删了：
+30、git branch -D <name>			强制删除分支（用于没有合并的分支）
+31、
