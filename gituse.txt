@@ -1,0 +1,13 @@
+git  使用方式
+1、mkdir <name>						创建文件夹
+2、pwd								输出当前文件夹
+3、git init							创建版本库
+4、ls -ah							显示隐藏文件
+5、git add <file>					添加文件到仓库
+6、git commit -m “...”				提交文件到仓库
+7、git status						查看仓库当前状态
+8、git diff <file>					查看修改
+9、git log							查看历史记录
+10、git log --pretty=oneline		一行输出上面的指令输出
+11、git reset --hard <版本号>		返回之前的版本 也可以回退到后来的版本
+12、git reflog						查看命令历史
